@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .navbar{
+        display: flex;
+        justify-content:space-between ;
+        position: sticky;
+        z-index: 1;
+        top: 0;
+        background-color: white;
+        padding: 25px;
+        color: black;
+    }
+    .container{
+        margin: 5px;
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        grid-gap: 10px;
+    }
+    .imagewithdetails{
+        margin: 40px;
+
+    }
+    @media only screen and (max-width:500px) {
+      .navbar{
+       padding: 10;
+       margin: 5;
+      }
+        .container{
+            display: block;   
+            text-align: center;
+            word-wrap: break-word;
+            flex-direction: row;
+            
+        } 
+        .numbersides{
+          text-align: center;
+          margin-left: -10px;
+          font-size: small;
+          height: 0px;
+          width: 0px;
+
+        }
+        .aboutme{
+            text-align: center;
+            font-size: small;
+        }
+       .image{
+        height: 200px;
+        width: 200px;
+      }
+      .footercontainer{
+        flex-direction: column;
+      }
+      .Maindiv{
+        margin: -10px;
+      }
+      }
+    .numbersides{
+        background-color:white;
+        height: 50px;
+        width: 50px;
+        border: 0;
+      }
+      .numbersides:hover{
+        background-color: black;
+        color: white;
+      }
+      /* .imagefooter{
+        flex-direction: column;
+      } */
+      .button{
+        text-align: center;
+      }
+      .aboutme{
+        padding-top: 20px;
+        text-align: center;
+        font-size: large;
+        word-wrap: break-word;
+      }
+      .populartags{
+        background-color: black;
+        color: white;
+        padding: 5px;
+        border: 0;
+      }
+      .footercontainer{
+       display: flex ;
+       margin: 10px;
+      }
+      .Maindiv{
+        margin: -10px;
+      }
+      
+</style>
+<body>
+    <div class="navbar">
+         <h1> <i class="fa-solid fa-bars"></i> </h1>
+         <h1> My food </h1>
+         <h1> Mail </h1>
+    </div>
+    <div class="Maindiv">
+    <div class="container">
+        <div class="imagewithdetails">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" height="400px" width="250px">
+            <h1> The Perfect Sandwich, A Real NYC Classic </h1>
+            <p> ust some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="imagewithdetails">
+            <img src="https://www.w3schools.com/w3images/steak.jpg" height="400px" width="250px">
+            <h1> Let Me Tell You About This Steak </h1>
+            <p> Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+            </p>
+        </div>
+        <div class="imagewithdetails">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" height="400px" width="250px">
+            <h1> Cherries, interrupted </h1>
+            <p> Lorem ipsum text praesent tincidunt ipsum lipsum. </p>
+        </div>
+        <div class="imagewithdetails">
+            <img src="https://www.w3schools.com/w3images/wine.jpg" height="400px" width="250px">
+            <h1> Once Again, Robust Wine and Vegetable Pasta </h1>
+            <p> Lorem ipsum text praesent tincidunt ipsum lipsum. </p>
+        </div>
+    </div> 
+    <div class="container">
+        <div class="imagewithdetails">
+            <img src="https://www.w3schools.com/w3images/popsicle.jpg" height="400px" width="250px">
+            <h1> All I Need Is a Popsicle </h1>
+            <p>  Lorem ipsum text praesent tincidunt ipsum lipsum. </p>
+        </div>
+        <div class="imagewithdetails">
+            <img src="https://www.w3schools.com/w3images/salmon.jpg" height="400px" width="250px">
+            <h1> Salmon For Your Skin
+            </h1>
+            <p> Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum. </p>
+        </div>
+        <div class="imagewithdetails">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" height="400px" width="250px">
+            <h1> The Perfect Sandwich, A Real Classic </h1>
+            <p> Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum. </p>
+        </div>
+        <div class="imagewithdetails">
+            <img src="https://www.w3schools.com/w3images/croissant.jpg" height="400px" width="250px">
+            <h1> Le French
+            </h1>
+            <p> Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+    </div>
+    <div class="button">
+        <button class="numbersides">  </button>
+        <button class="numbersides"> 1</button>
+        <button class="numbersides"> 2</button>
+        <button class="numbersides"> 3</button>
+        <button class="numbersides"> 4</button>
+        <button class="numbersides"> </button>
+    </div>
+    <hr>
+       <div class="aboutme">
+          <h1> About Me, The Food Man </h1>
+          <img src="https://www.w3schools.com/w3images/chef.jpg" height="500" width="750" class="image">
+          <p> I am Who I Am! </p>
+          <p> With Passion For Real, Good Food </p>
+          <p> Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+       </div>
+       <hr>
+
+       <div class="footercontainer">
+           <div class="footer">
+                <h1> FOOTER </h1>
+                <p> Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. </p>
+                <p> Powered by w3.css </p>
+           </div>
+           <div class="footer">
+            <h1> BLOG POSTS </h1>
+            <div class="imagefooter">
+                <div>
+                <img src="https://www.w3schools.com/w3images/workshop.jpg" height="50" width="50">
+                </div>
+                <div style="margin-left: 10px; margin-top:-15px;">
+                    <p> Lorem </p>
+                    <p> Sed mattis nunc </p>
+                </div>
+            </div>
+            <div class="imagefooter">
+                <div>
+                <img src="https://www.w3schools.com/w3images/gondol.jpg" height="50" width="50">
+                </div>
+                <div style="margin-left: 10px; margin-top:-15px;">
+                    <p> Ipsum </p>
+                    <p> Praes tinci sed </p>
+                </div>
+             </div>
+           </div>
+           <div class="footer">
+            <h1> POPULAR TAGS </h1>
+            <button class="populartags"> Travel </button>
+            <button class="populartags"> New York </button>
+            <button class="populartags"> Dinner </button>
+            <button class="populartags"> Salmon </button>
+            <button class="populartags"> France</button>
+            <button class="populartags"> Drinks</button>
+            <button class="populartags"> Ideas</button>
+            <button class="populartags"> Flavors</button>
+            <button class="populartags"> Cuisine</button>
+            <button class="populartags"> Chicken</button>
+            <button class="populartags"> Dressing</button>
+            <button class="populartags"> Fried</button>
+            <button class="populartags"> Fish</button>
+            <button class="populartags"> Duck</button>
+           </div>
+       </div>
+    </div>
+</body>
+</html>
